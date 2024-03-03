@@ -1,0 +1,485 @@
+:root {
+    --peach: #DF9B7A;
+    --whitebeige: #F6F4EC;
+    --green: #A9AE8D;
+    --accent: #B4604D;
+    --beige: #F1D3B9;
+    --white: #ffffff;
+    --black: #000000;
+    --brick:#C17C6C;
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.text-h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 64px;
+    text-transform:capitalize;
+}
+.text-h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 39.2px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif; */
+.container {
+    min-width: 1440px;
+    margin: 0 auto;
+}
+.header {
+    min-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--whitebeige);
+}
+.first-title {
+    display: flex;
+    justify-content: center;
+    background-color: var(--accent);
+}
+.first-title h3{
+    max-width: 1440px;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--beige);
+}
+.header-second-part {
+
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header-menu {
+    width: 432px;
+    display: flex;
+    justify-content: left;
+}
+.header-menu-item {
+    color: var(--accent);
+    margin-left: 32px;
+
+}
+.header-menu-item:first-child{
+    margin-left: 0px;
+}
+.header-basket {
+    width: 432px;
+    display: flex;
+    justify-content: right;
+}
+.header-basket p{
+    font-size: 14px;
+    line-height: 22.4px;
+    color: var(--accent);
+}
+.header_acc {
+    padding-right: 20px;
+}
+.header-basket-logo {
+    padding-right: 5px;
+}
+.main-img {
+    min-height: 435px;
+    background-image: url(../img/mainBackgroundDae.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+
+}
+.header-button {
+    width: 128px;
+    height: 48px;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    font-family: 'Roboto', sans-serif ;
+    font-size: 17px ;
+    line-height: 28.8px;
+    border: none;
+    color: var(--white);
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 332px;
+}
+.header-button:hover{
+    left: 50.5%;
+    scale: 1.1;
+    cursor: pointer;
+}
+/*
+info section 
+*/
+.info {
+    min-width: 1440px;
+    min-height: 304px;
+    background-color: var(--green);
+    color: var(--whitebeige); 
+    margin: 0 auto;
+}
+.info-inner{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    padding: 69px 70px;
+
+}
+.info-h3 {
+    padding-bottom: 15px;
+}
+.info-h1 {
+    padding-bottom: 30px;
+}
+.info-button {
+    border: none;
+    background-color: inherit;
+    color: var(--whitebeige);
+    font-family: 'Roboto', sans-serif ;
+    font-size: 16px;
+    line-height: 27.2px;
+    text-align: left;
+
+}
+.info-button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*
+shop section
+*/
+.shop .container {
+    background-color: var(--whitebeige);
+}
+.shop-inner {
+    max-width: 1300px;
+    padding: 39px 0 69px;
+    color: #B45F4D;
+    margin: 0 auto;
+}
+.shop-title {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    line-height: 39.2px;
+}
+.shop-flex {
+    margin-top: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+.shop-flex_item {
+    width: 380px;
+    height: 643px;
+}
+.shop-flex_item_img-1 {
+    min-height: 567px ;
+    background-image: url(../img/FramemainProducts.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+.shop-flex_item_img-2 {
+    min-height: 567px ;
+    background-image: url(../img/FramemainProducts-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+.shop-flex_item_img-3 {
+    min-height: 567px ;
+    background-image: url(../img/FramemainProducts-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+.shop-flex_item_title p {
+    padding-top: 9.84px;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 25.2px;
+
+}
+.shop-flex_item_price p {
+    padding-top: 7px;
+}
+/*highlight section*/
+.highlight {
+}
+.highlight_inner {
+    padding: 24px 0 50px ;
+    margin: 0 auto;
+    max-width: 1219px;
+    min-height: 414px;
+}
+.highlight-img {
+    min-height: 414px ;
+    background-image: url(../img/DaeBotle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+}
+.highlight-flex {
+    max-width: 1220px;
+    min-height: 92px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--peach);
+    position: relative;
+    top: 322px;
+
+
+}
+.highlight-p {
+    color: var(--whitebeige);
+    font-size: 20px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.highlight-button {
+    border: none;
+    background-color: inherit;
+    color: var(--whitebeige);
+    font-family: 'Roboto', sans-serif ;
+    font-size: 18px;
+    line-height: 28.8px;
+}
+.highlight-button:hover{
+cursor: pointer;
+text-decoration: underline;
+}
+.meeting .container {
+    background-color: var(--beige);
+    color: #B45F4D;
+    min-height: 1069px;
+    margin: 0 auto;
+}
+.meeting-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+}
+.meeting-img {
+    width: 632px;
+    min-height: 947px ;
+    background-image: url(../img/6Z3A4921_1200x\ 1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: 61px;
+}
+.metting-text {
+    width: 518px;
+    height: 602px;
+    padding: 50px 50px 0 50px;
+    background-color: #f8f8f8;
+    position: relative;
+    top: 285px;
+    left: -50px;
+}
+.meeting-text-title {
+
+}
+.meeting-text-text {
+    text-align: center;
+    font-size: 30px;
+    line-height: 57.6px;
+
+}
+.meeting-text-p {
+    padding-top: 22px;
+    text-align: left;
+    font-size: 19px;
+    line-height: 30.4px;
+    margin-bottom: 46px;
+
+}
+.meeting-button {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+    color: var(--whitebeige);
+    font-family: 'Roboto', sans-serif ;
+    font-size: 16px;
+    line-height: 25.8px;
+    color: #B45F4D;
+    padding: 0;
+    margin: 0;
+}
+.meeting-button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.photo {
+    min-height: 260px;
+}
+.photo-inner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.photo-inst p {
+    text-align: center;
+    padding: 25px 0 43px 0;
+    font-size: 23px;
+    line-height: 39.2px;
+}
+.photo-gap {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    gap: 9.59px;
+}
+.photo-gap-item {
+    padding-bottom: 42px;
+}
+.photo-1 {
+    min-height: 130px;
+    background-image: url(../img/FramephotoDae-5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.photo-2 {
+    min-height: 130px;
+    background-image: url(../img/FramephotoDae.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.photo-3 {
+    min-height: 130px;
+    background-image: url(../img/FramephotoDae-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.photo-4 {
+    min-height: 130px;
+    background-image: url(../img/FramephotoDae-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.photo-5 {
+    min-height: 130px;
+    background-image: url(../img/FramephotoDae-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.photo-6 {
+    min-height: 130px;
+    background-image: url(../img/FramephotoDae-4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.footer .container{
+    background-color: var(--whitebeige);
+    border-top: 2px #F1D3B9 solid;
+    color: var(--brick);
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.footer-inner {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 61px 50px 60px;
+}
+.footer-flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+.footer-item-flex {
+}
+.item-flex1 {
+    width: 201px;
+}
+.footer-item-1 {
+    padding-top: 12px;
+}
+.footer-item-1:first-child{
+    padding-top: 0;
+}
+.text-p {
+}
+.item-flex2 {
+    width: 603px;
+}
+.item-flex3 {
+    width: 536px;
+}
+.item-flex3 .footer-item-1:nth-child(2){
+    padding-top: 19px;
+}
+.item-flex3 .footer-item-1:nth-child(3){
+    padding-top: 5px;
+}
+.footer-rights {
+    width: 1340px;
+    text-align: left;
+}
+
